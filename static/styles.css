@@ -12,7 +12,6 @@
 
 #option,
 #co-name{
-  float: left;
   display: block;
   color: #000000;
   text-align: center;
@@ -20,6 +19,14 @@
   text-decoration: none;
   font-family: 'Roboto', sans-serif;
   font-size: 18px;
+}
+
+#co-name{
+  float: left;
+}
+
+#option{
+  float: right;
 }
 
 #option:hover{
@@ -159,8 +166,9 @@
 
 .header-text {
     font-size: 72px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Saira Stencil One', cursive;
     color: #ffffff;
+    text-shadow: 3px 3px #1a1a1a;
 }
 
 .subhead-text{
@@ -396,15 +404,15 @@
   display: inline-block;
   vertical-align: top;
   margin: 15px;
-  border: 4px solid #009900;
-  background-color: #009900;
+  border: 4px solid #003d66;
+  background-color: #003d66;
   border-radius: 5%;
   padding: 0;
   box-shadow: 3px 3px 8px #888888;
 }
 
 .packages-header{
-  background-image: linear-gradient(to bottom, #009900, #006600);
+  background-image: linear-gradient(to bottom, #003d66, #002e4d);
   width: 100%;
   height: 200px;
   margin: 0;
@@ -434,10 +442,9 @@
 }
 
 #find-out{
-  background-image: linear-gradient(to bottom, #009900, #006600);
+  background-image: linear-gradient(to bottom, #003d66, #002e4d);
   color: #ffffff;
-  border: 1px solid #009900;
-  border-radius: 10%;
+  border-radius: 5%;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   padding: 10px;
@@ -449,7 +456,7 @@
 }
 
 #find-out:hover{
-  background-color: #006600;
+  background-color: #002e4d;
   transition: 0.9s;
   cursor: pointer;
 }
@@ -459,14 +466,14 @@
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 2){
   .packages{
-    background-color: #009900;
+    background-color: #002e4d;
     max-width: 80%;
     margin: 60px;
-    border: 16px solid #009900;
+    border: 16px solid #002e4d;
     box-shadow: 12px 12px 32px #888888;
   }
   .packages-header{
-    background-image: linear-gradient(to bottom, #009900, #009900);
+    background-color: #002e4d;
   }
   .info-box{
     height: auto;
@@ -505,10 +512,9 @@
 /* Pod page */
 
 #sign-up-btn{
-  background-color: #009900;
+  background-color: #003d66;
   color: #ffffff;
-  border: 1px solid #009900;
-  border-radius: 10%;
+  border-radius: 5%;
   font-family: 'Roboto', sans-serif;
   font-size: 24px;
   padding: 15px;
@@ -518,7 +524,7 @@
 }
 
 #sign-up-btn:hover{
-  background-image: linear-gradient(to bottom, #009900, #006600);
+  background-color: #002e4d;
   transition: 0.9s;
   cursor: pointer;
 }

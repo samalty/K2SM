@@ -89,7 +89,7 @@ window.onscroll=scrollToTopAppear;
 
 function scrollToTopAppear(){
     var windowInnerHeight=window.innerHeight;
-    if (body.scrollTop > windowInnerHeight / 2 || html.scrollTop > windowInnerHeight / 2){
+    if (body.scrollTop > windowInnerHeight * 2 || html.scrollTop > windowInnerHeight * 2){
         scrollTopBtn.classList.add("visible");
     } else {
         scrollTopBtn.classList.remove("visible");
