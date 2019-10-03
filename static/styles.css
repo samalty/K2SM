@@ -259,6 +259,30 @@
   border-radius: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
+  opacity: 0;
+}
+
+.link-appear{
+  animation: rise 1.5s ease-out, fadeIn 1.5s ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes rise{
+  from{
+    transform: translateY(300px);
+  }
+  to{
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .fa-linkedin{
@@ -354,8 +378,8 @@
   .services-text{
     font-size: 44px;
   }
-  .fa-linkedin,
   .fa-comments,
+  .fa-linkedin,
   .fa-lightbulb{
     font-size: 224px;
     background-image: linear-gradient(#0055ff, #003399);

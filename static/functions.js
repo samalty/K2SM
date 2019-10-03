@@ -60,6 +60,28 @@ $(document).ready(function(){
     
 });
 
+/* Home page service link animate function */
+
+window.addEventListener('scroll', () => {
+
+    $(document).ready(function(){
+
+        var docTop = $(window).scrollTop();
+        var docBottom = docTop + $(window).height();
+
+        var linkTop = $('#service-link1').offset().top;
+        var linkBottom = linkTop + $('#service-link1').height();
+
+        if (linkTop <= (docBottom - 150)){
+            $('.fa-comments').addClass('link-appear');
+            $('.fa-linkedin').addClass('link-appear');
+            $('.fa-lightbulb').addClass('link-appear');
+        }
+        
+    });
+    
+});
+
 /* Home page fade + when open */
 
 function changeClass1(){
